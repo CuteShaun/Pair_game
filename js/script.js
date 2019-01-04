@@ -39,7 +39,6 @@
       .join(" ");
 
     container.innerHTML = html;
-    return;
   }
 
   function removeActive(activeElements) {
@@ -56,9 +55,7 @@
 
   function compareImgSrc(imgs) {
     imgs = [...document.querySelectorAll(".active .flip-box__img")];
-    if (imgs.length === 2 && imgs[0].src === imgs[1].src) {
-      return true;
-    }
+    return imgs.length === 2 && imgs[0].src === imgs[1].src;
   }
 
   function getActiveElems() {
