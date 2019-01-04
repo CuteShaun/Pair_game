@@ -113,7 +113,6 @@ body {
   .wrapper {
     overflow-y: visible;
     min-height: 185vh;
-    /* height: auto; */
   }
 
   .container {
